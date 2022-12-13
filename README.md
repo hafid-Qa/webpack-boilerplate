@@ -15,6 +15,7 @@ First clone this repository to your laptop:
 git clone git@github.com:hafid-Qa/webpack-boilerplate.git your-project-name
 cd your-project-name
 rm -rf .git
+git init
 code . # Open this folder in your text editor
 ```
 
