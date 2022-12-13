@@ -34,15 +34,17 @@ yarn run dev
 npm run dev
 ```
 
-Once the server is running:
+## Once the server is running:
 
-you can view your app
+you can view your app in:
+
 localhost:8080
 
-to view interactive treemap visualization of the contents of all your bundles.
+to view an interactive treemap visualization of the contents of all your bundles.
+
 localhost:8888
 
-to stop this page from opening perform below
+to stop this page from opening perform below change.
 
 ```bash
 # comment below line in webpack.config.js
