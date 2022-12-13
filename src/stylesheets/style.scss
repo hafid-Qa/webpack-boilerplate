@@ -3,11 +3,25 @@
 @import url("components/container.scss");
 @import url("components/button.scss");
 
-$primary-color: #e87006;
 
-p {
-  margin-top: 40vh;
-  text-align: center;
-  font: normal 24px monospace;
-  color: $primary-color;
+$primary-color: #2fa8cc;
+$secondary-color: #f4f4f4;
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondary-color;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
 }
