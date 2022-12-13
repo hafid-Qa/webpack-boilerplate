@@ -1,5 +1,11 @@
 /* --- Import Components stylesheets --- */
-@import url("components/avatar.css");
-@import url("components/container.css");
-@import url("components/button.css");
+@import url("components/avatar.scss");
+@import url("components/container.scss");
+@import url("components/button.scss");
 
+p {
+  margin-top: 40vh;
+  text-align: center;
+  font: normal 24px monospace;
+  color: orangered;
+}

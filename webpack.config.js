@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    main: path.resolve(__dirname, "src/javascripts/index.js"),
+    main: path.resolve(__dirname, "src/javascript/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -17,7 +17,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, "dist"),
     },
-    open: true,
+    // open: true,
     hot: true,
     compress: true,
     historyApiFallback: true,
@@ -28,6 +28,14 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
