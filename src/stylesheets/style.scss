@@ -3,9 +3,11 @@
 @import url("components/container.scss");
 @import url("components/button.scss");
 
+$primary-color: #e87006;
+
 p {
   margin-top: 40vh;
   text-align: center;
   font: normal 24px monospace;
-  color: orangered;
+  color: $primary-color;
 }
