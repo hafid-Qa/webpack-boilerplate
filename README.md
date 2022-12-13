@@ -5,7 +5,6 @@ You must have Node and Yarn installed on your computer [with the same versions t
 ```bash
 node -v
 yarn -v
-# Compare the versions with the ones in the setup
 ```
 
 ## Installation
