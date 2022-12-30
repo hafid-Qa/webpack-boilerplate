@@ -38,20 +38,23 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack App",
       filename: "index.html",
-      template: "src/index.html",
+      template: "./src/index.html",
     }),
     new BundleAnalyzerPlugin(),
   ],
