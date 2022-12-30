@@ -1,7 +1,5 @@
+// Do not remove this
 import "../stylesheets/style.scss";
-import emoji from "../images/emoji.png";
-
-const img = document.querySelector("#img");
-img.src = emoji;
+import "../index.html";
 
 console.log("Hello from src/javascript/index.js!");
